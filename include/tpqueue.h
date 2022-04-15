@@ -11,6 +11,7 @@ class TPQueue {
  public :
   TPQueue() :f1(0), ls2(0) { }
   void push(T x) {
+  T value = x;
   int temp = ls2;
   for (int i = f1; i <= ls2; i++) {
   while ((temp > f1) && (arr[temp % size].prior > value.prior)) {
