@@ -17,7 +17,7 @@ class TPQueue {
   temp = ls2++ - 1;
   while ((temp >= f1) && (arr[temp % size].prior > value.prior)) {
     if (arr[temp % size].prior == value.prior) {
-      arr[(temp + 1) % size] = value;
+      arr[(temp++) % size] = value;
       break;
     }
     arr[(temp + 1) % size] = arr[temp % size];
