@@ -4,12 +4,12 @@
 
 template<typename T, int size>
 class TPQueue {
- private : 
+ private :
   T arr[5];
   int ls2;
   int f1;
  public :
- TPQueue () :f1(0), ls2(0) { }
+  TPQueue() :f1(0), ls2(0) { }
   void push(T x) {
   int temp = ls2;
   for (int i = f1; i <= ls2; i++) {
