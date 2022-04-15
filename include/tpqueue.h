@@ -22,7 +22,7 @@ class TPQueue {
     arr[(temp + 1) % size] = arr[temp % size];
     temp--;
   }
-  arr[temp] == value;
+  arr[temp % size] == value;
   break;
   }
   }
