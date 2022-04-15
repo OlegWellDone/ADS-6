@@ -14,8 +14,8 @@ class TPQueue {
   T value = x;
   int temp = 0;
   for (int i = f1; i < size; i++) {
-  temp = ls2++ - 1;
-  while ((temp >= f1) && (arr[temp % size].prior > value.prior)) {
+    temp = ls2++ - 1;
+  while ((temp >= f1) && (arr[temp % size].prior < value.prior)) {
     if (arr[temp % size].prior == value.prior) {
       arr[(temp++) % size] = value;
       break;
