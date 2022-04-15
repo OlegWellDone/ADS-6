@@ -12,9 +12,9 @@ class TPQueue {
   TPQueue() :f1(0), ls2(0) { }
   void push(T x) {
   T value = x;
-  int temp = ls2;
+  int temp = ls2++ - 1;
   for (int i = f1; i < size; i++) {
-  while ((temp > f1) && (arr[temp % size].prior > value.prior)) {
+  while ((temp >= f1) && (arr[temp % size].prior > value.prior)) {
     if (arr[temp % size].prior == value.prior) {
       arr[(temp + 1) % size] = value;
       break;
