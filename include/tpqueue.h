@@ -27,7 +27,7 @@ class TPQueue {
   }
   }
   T pop() {
-  return (arr[f1 % size]);
+  return (arr[(f1 + 1) % size]);
   }
 };
 
