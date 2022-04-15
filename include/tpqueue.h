@@ -13,7 +13,7 @@ class TPQueue {
   void push(T x) {
   T value = x;
   int temp = ls2;
-  for (int i = f1; i <= ls2; i++) {
+  for (int i = f1; i < size; i++) {
   while ((temp > f1) && (arr[temp % size].prior > value.prior)) {
     if (arr[temp % size].prior == value.prior) {
       arr[(temp + 1) % size] = value;
