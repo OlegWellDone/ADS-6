@@ -22,12 +22,12 @@ class TPQueue {
     arr[(temp + 1) % size] = arr[temp % size];
     temp--;
   }
-  arr[(temp + 2) % size] = value;
+  arr[(temp++ + 1) % size] = value;
   break;
   }
   }
   T pop() {
-  return (arr[(f1 + 1) % size]);
+  return (arr[(f1++) % size]);
   }
 };
 
